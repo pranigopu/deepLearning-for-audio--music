@@ -58,5 +58,10 @@ Hence, we begin by discussing NN's.
     - `NN.base.3`: Success criteria
         - Flexibility
         - Efficiency
+    - `NN.MoL`: The mathematics of learning
+        - `NN.MoL.Norm`: Norm (L1, L2, etc.)
+            - Definition & basic properties
+            - L2 norm a.k.a. Euclidean distance
+            - Relation between norm & distance (especially with respect to vectors)<br> **CONSIDER**: Given vectors $X$ and $Y$, norm of $X-Y$ is some type of distance between $X$ & $Y$
 
 **NOTES ON FLEXIBILITY & EFFICIENCY**:<br>Flexibility is essentially generalisability; generalisation can often be improved by task-specific architectures. Efficiency is with respect to computation, time and hardware usage.
