@@ -63,5 +63,10 @@ Hence, we begin by discussing NN's.
             - Definition & basic properties
             - L2 norm a.k.a. Euclidean distance
             - Relation between norm & distance (especially with respect to vectors)<br> **CONSIDER**: Given vectors $X$ and $Y$, norm of $X-Y$ is some type of distance between $X$ & $Y$
+            - Use of norms for comparing vectors of all observed & predicted targets<br> _... relates to cost function_
+        - `NN.MoL.CF`: Cost function
+            - Cost function as a measure of distance between observed and predicted targets
+            - Cost function as a function in terms of NN parameters<br> _... relates to gradient descent_
+        - `NN.MoL.GD`: Gradient descent (with respect to cost function)<br> _... extends from cost function, i.e._ `NN.MoL.CF`
 
 **NOTES ON FLEXIBILITY & EFFICIENCY**:<br>Flexibility is essentially generalisability; generalisation can often be improved by task-specific architectures. Efficiency is with respect to computation, time and hardware usage.
