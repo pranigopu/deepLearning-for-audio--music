@@ -32,13 +32,13 @@ Hence, we begin by discussing NN's.
         - Matrix multiplication with tensors (_how is it done?_)
         - Broadcasting
         - Memory management
-            - Assignment only assigns new names and does not create copies
+            - Assignment only assigns new names & does not create copies
                 - Hence, using assignment, different identifiers can be made to refer to the same memory
                 - Assignment does not by itself duplicate data
             - In-place assignments can be done in the following ways (given tensors `X` and `Y`):
                 - `Y += X`
                 - `Y[:] = Y + X`
-                - **NOTE**: `Y = Y + X` is not in-place and creates a new memory location for `Y`
+                - **NOTE**: `Y = Y + X` is not in-place & creates a new memory location for `Y`
         - Converting tensors to other Python datatypes (ex. NumPy array, float, etc.)
 - Generator functions in Python
     - Keyword `yield` used to mark the point from where the function must continue in the next call
@@ -48,7 +48,7 @@ Hence, we begin by discussing NN's.
 - `NN`: Neural network
     - `NN.base.1`: Basic terminology
         - Observation & its representation as a vector
-        - Target (generally real-valued and not a vector)
+        - Target (generally real-valued & not a vector)
         - Neuron
         - Layer
     - `NN.base.2`: Key aspects of NN
