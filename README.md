@@ -39,6 +39,7 @@ Hence, we begin by discussing NN's.
                 - `Y += X`
                 - `Y[:] = Y + X`
                 - **NOTE**: `Y = Y + X` is not in-place and creates a new memory location for `Y`
+        - Converting tensors to other Python datatypes (ex. NumPy array, float, etc.)
 - Generator functions in Python
     - Keyword `yield` used to mark the point from where the function must continue in the next call
     - Local variables for the next call and execution resumes from `yield`
