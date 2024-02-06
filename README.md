@@ -1,5 +1,5 @@
 # Deep learning (DL) in music & audio
-A record of my work in the deep learning course of my master's. Technically, deep learning is a part of ML, but ML basics were covered in a separate previous course.
+A record of my work in the deep learning in audio and music course of my master's. Technically, deep learning is a part of ML, but ML basics were covered in a separate previous course.
 
 ## ML to DL
 ### Broad areas of ML
