@@ -4,3 +4,5 @@ As a part of the deep learning for audio and music course, we students have to p
 - My experience in piano assessment (as a student)
 - The relevance of such an application (ex. personal performance evaluation to help self-improvement)
 - The interesting complexity of the problem of automating musical evaluation
+
+CHOSEN PAPER LINK: https://arxiv.org/abs/2101.04884
