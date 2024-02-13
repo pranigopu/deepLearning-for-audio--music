@@ -69,10 +69,15 @@ Relevant quote: <br> _"In this paper, automated determination of piano playing s
 
 **NOTE**: _The 2 different use-cases based on the 2 different sampling schemes are both explored and compared to each other in experimentation._
 
----
+### Training details
+
+
+#### Unimodal approach
 
 ## Key considerations for experimentation
-- Questions for experiments
-    - Is it possible to determine the pianist’s skill level using machine learning/computer vision?
-    - What is the better sampling strategy: contiguous or uniform distribution?
-    - Is a multimodal assessment better than a unimodal asssessment?
+**Questions for experiments**:
+
+- Is it possible to determine the pianist’s skill level using machine learning/computer vision?
+- What is the better sampling strategy: contiguous or uniform distribution?
+- Is a multimodal assessment better than a unimodal asssessment?
+    - Hence, the paper involves both unimodal and multimodal approaches
