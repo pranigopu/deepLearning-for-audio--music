@@ -43,21 +43,27 @@ Relevant quote: <br> _"In this paper, automated determination of piano playing s
 
 ---
 
-**QUESTION**: How are the above attributes measured?
+**QUESTION 1**: How are the above attributes measured?
 
-**ANSWER**: <br> (1) _"The primary evaluation of player skill is through the technique required for the most difficult song they are able to play. In this way, song level generally indicates player skill."_ The technique is graded based on skill-level as defined in the syllabus by Music Teachers National Association (MTNA). (2) _"The methodology for determining the song level (SL) of difficulty of a piano piece utilized multiple syllabi. A 10 point grading system was used for piece difficulty."_ As with player skill, music difficulty was graded based on the skill-level as defined in various syllabi; cross referrencing was done as needed.
-
----
-
-**QUESTION**: How was the training and testing (annotated) data acquired?
-
-**ANSWER**: <br> (1) Acquiring the data: _"We had to rely on a trained pianist to collect videos from YouTube, analyze them, and determine each player’s skill level (as described above). As such, scaling up the dataset is difficult. We collected a total of 61 total piano performances."_ <br> (2) Annotating the data: _"For each piano performance, we provide the following annotations: 1) player skill level; 2) song difficulty level; 3) name of the song; 4) a bounding box around the pianist’s hands"_ <br> (3) Delineating the testing and training data: _"Out of the 61 total piano performances, we use 31 (516 samples) as our training set and 30 (476 samples) as our test set. Note that no overlap exists between train and test sets."_
+**ANSWER 1**: <br> (1) _"The primary evaluation of player skill is through the technique required for the most difficult song they are able to play. In this way, song level generally indicates player skill."_ The technique is graded based on skill-level as defined in the syllabus by Music Teachers National Association (MTNA). (2) _"The methodology for determining the song level (SL) of difficulty of a piano piece utilized multiple syllabi. A 10 point grading system was used for piece difficulty."_ As with player skill, music difficulty was graded based on the skill-level as defined in various syllabi; cross referrencing was done as needed.
 
 ---
 
-**QUESTION** (follow-up of previous): How was the small dataset size mitagated?
+**QUESTION 2**: How was the training and testing data acquired and annotated?
 
-**ANSWER**: <br> _"To mitigate small dataset size, we create multiple unique, non-overlapping samples, each of size of 160 frames. In this way, we have a total of 992 unique samples."_ Hence, they divide the videos into small, equally-sized clips; the model is to be trained not on whole videos but on clips. This would be necessary in any case (even for a larger dataset), since CNNs have difficulty processing long videos (however, for larger datasets, we may only take a few clips per video, rather than use the whole video). 
+**ANSWER 2**: <br> (1) Acquiring the data: _"We had to rely on a trained pianist to collect videos from YouTube, analyze them, and determine each player’s skill level (as described above). As such, scaling up the dataset is difficult. We collected a total of 61 total piano performances."_ <br> (2) Annotating the data: _"For each piano performance, we provide the following annotations: 1) player skill level; 2) song difficulty level; 3) name of the song; 4) a bounding box around the pianist’s hands"_ <br> (3) Delineating the testing and training data: _"Out of the 61 total piano performances, we use 31 (516 samples) as our training set and 30 (476 samples) as our test set. Note that no overlap exists between train and test sets."_
+
+---
+
+**QUESTION 3.1** (follow-up of previous): How was the small dataset size mitagated?
+
+**ANSWER 3.1**: <br> _"To mitigate small dataset size, we create multiple unique, non-overlapping samples, each of size of 160 frames. In this way, we have a total of 992 unique samples."_ Hence, they divide the videos into small, equally-sized clips; the model is to be trained not on whole videos but on clips. This would be necessary in any case (even for a larger dataset), since CNNs have difficulty processing long videos (however, for larger datasets, we may only take a few clips per video, rather than use the whole video).
+
+**QUESTION 3.2**: How are the samples taken?
+
+**ANSWER 3.2**: Samples are taken in 2 different ways (leading to 2 different use-cases): (a) contiguous sampling scheme and (b) uniformly distributed sampling scheme. <br> A sampling scheme is a detailed description of what data will be obtained and how this will be done. Each performance - measured in frames - is divided into small, equally-sized segments (equally-sized means having the same number of frames). A sample is the set of segments considered as a whole (i.e. as a single input for the CNN). Sampling scheme, thus, defines the method by which the segments are picked for each sample. <br> (a) Contiguous sampling scheme is wherein each sample gets a set of contiguous segments. <br> (b) Uniformly distributed sampling scheme is wherein each sample gets uniformly-spaced segments from across the performance video.
+
+---
 
 ## Key considerations for experimentation
 - Questions for experiments
