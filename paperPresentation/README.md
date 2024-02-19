@@ -12,7 +12,7 @@ CHOSEN PAPER LINK: https://arxiv.org/abs/2101.04884
 # Notes on the chosen paper
 ## Driving questions
 - Can a computer assess piano player's skill level?
-- Visual analysis or auditory analysis?
+- Visual analysis or auditory analysis? What about both?
 - How to sample shorter clips to best reflect player performance
     - **CONTEXT**: Long videos are difficult for CNNs to process
 
