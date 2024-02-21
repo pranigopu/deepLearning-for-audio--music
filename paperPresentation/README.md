@@ -57,7 +57,7 @@ Relevant quote: <br> _"In this paper, automated determination of piano playing s
 
 **QUESTION 3** (follow-up of previous): How was the small dataset size mitagated?
 
-**ANSWER 3**: <br> _"To mitigate small dataset size, we create multiple unique, non-overlapping samples, each of size of 160 frames. In this way, we have a total of 992 unique samples."_ Hence, they divide the videos into small, equally-sized clips; the model is to be trained not on whole videos but on clips. This would be necessary in any case (even for a larger dataset), since CNNs have difficulty processing long videos (however, for larger datasets, we may only take a few clips per video, rather than use the whole video).
+**ANSWER 3**: <br> _"To mitigate small dataset size, we create multiple unique, non-overlapping samples, each of size of 16 frames. In this way, we have a total of 992 unique samples."_ Hence, they divide the videos into small, equally-sized clips; the model is to be trained not on whole videos but on clips. This would be necessary in any case (even for a larger dataset), since CNNs have difficulty processing long videos (however, for larger datasets, we may only take a few clips per video, rather than use the whole video).
 
 <br>
 
