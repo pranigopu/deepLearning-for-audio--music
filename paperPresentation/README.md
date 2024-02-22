@@ -7,6 +7,8 @@ As a part of the deep learning for audio and music course, we students have to p
 
 CHOSEN PAPER LINK: https://arxiv.org/abs/2101.04884
 
+PRESENTATION SLIDES: https://docs.google.com/presentation/d/1MwOBhCRWOwuQSIS4EzNI2pcHKx47INieJDVfoiTOCDI/edit?usp=sharing
+
 ---
 
 # Notes on the chosen paper
