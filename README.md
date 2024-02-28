@@ -10,7 +10,7 @@ A record of my work in the deep learning (DL) for audio and music course of my m
 To explore further, check the following:
 
 - [DL focused part](https://github.com/pranigopu/deepLearning--for--audio-music/blob/17d6660862f79616c63c2bab18adaf260f166f57/deepLearning.md)
-- [Audio & music focused part](https://github.com/pranigopu/deepLearning--for--audio-music/blob/17d6660862f79616c63c2bab18adaf260f166f57/audio.md)
+- [Audio & music focused part](https://github.com/pranigopu/deepLearning--for--audio-music/blob/8ab6c0c51e767763230fa5ebdd09658122a2302a/audioAndMusic.md)
 
 ## Programming support topics
 
