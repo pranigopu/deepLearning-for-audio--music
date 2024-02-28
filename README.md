@@ -6,6 +6,12 @@ A record of my work in the deep learning (DL) for audio and music course of my m
 - Classify audio or parts of audio
 - Musical analysis
 
+---
+To explore further, check the following:
+
+- [DL focused part](https://github.com/pranigopu/deepLearning--for--audio-music/blob/17d6660862f79616c63c2bab18adaf260f166f57/deepLearning.md)
+- [Audio & music focused part](https://github.com/pranigopu/deepLearning--for--audio-music/blob/17d6660862f79616c63c2bab18adaf260f166f57/audio.md)
+
 ## Programming support topics
 
 - `pytorch`: PyTorch library for handling vectors & matrices as tensors
