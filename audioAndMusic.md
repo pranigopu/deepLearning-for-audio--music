@@ -1,4 +1,4 @@
-# Topics for audio
+# Topics for audio & music
 
 - Audio representation
     - Raw waveform
