@@ -13,6 +13,14 @@
         - Constant Q-transform
         - Chromograph
             - Merges information across octaves
+
+**NOTE: More on audio representation strategies**:
+
+- Extreme minimal computation $\implies$ Raw waveform
+- Extreme maximal computation $\implies$ Pre-trained embeddings
+- Visual representation $\implies$ Spectograms
+- Data normalisation
+
 - Audio file representation
     - Sequence of frames <br> _Raw audio divided into frames_ <br> **NOTE**: Hop = Step, Size = Length = Width (i.e. they are interchangeable here)
         - Window vs. frame
