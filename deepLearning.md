@@ -1,7 +1,77 @@
-# Deep learning topics (especially w.r.t. audio & music)
+# Deep learning topics w.r.t. audio & music
 
 - ML = Machine learning
 - DL = Deep learning
+
+## Section list
+- Relevance of DL (or ML in general) in audio & music
+    - Recognition tasks
+    - Generative tasks
+- ML to DL
+- Conceptual map
+
+## Relevance of DL (or ML in general) in audio & music
+### Recognition tasks
+- Classification (binary, multiclass, multilabel)
+- Detection
+- Transcription
+
+**Core problems in machine listening (recognition tasks)**:
+
+- Sound event detection
+- Sound scene recognition
+- Source separation
+- Noise level estimation
+- Noise reduction
+
+### Generative tasks (extra topic)
+**NOTE**: Generative tasks can be handled in ways other than ML or DL, but here, we shall look at it w.r.t. how it is handled using DL.
+
+**Why DL for generative music?**
+
+- Better generalisation
+- Feasible in more complex generative goals
+- More flexible & adaptable
+
+**5 dimensions of generative problem**:
+
+1. Objective
+    - Type (generative vs. conditional)
+    - Destination (_how is music presented or made available?_)
+    - Interaction mode & style
+        - Human as audience
+        - System as performer
+        - System as instrument
+    - Style & constraints
+    - Quality & innovation
+2. Representation (_not the same as musical features_)
+    - Audio
+        - MIDI formal
+        - Piano roll representation
+    - Symbolic
+        - ABC notation
+        - Sheet music
+    - _Issues in representation_
+        - Feature extraction
+        - Expressiveness
+3. Architecture
+    - Feed forward neural network
+    - Autoencoder
+    - Recurrent neural network (RNN)
+        - LSTM
+    - Compound architecture
+        - Adversarial neural network
+        - Neurosymbolic
+4. Challenges
+    - Overfitting avoidance
+        - Dropout
+        - Data augmentation
+        - Weight decay
+        - Early stopping
+    - _How to achieve output variablility/diversity?_
+5. Strategy
+    - _How to control the model after training?_
+    - _How to control the generative process?_
 
 ## ML to DL
 ### Broad areas of ML
@@ -68,10 +138,23 @@ Now, we shall look at convolutional neural networks (CNNs), which are used for t
         - CLs always provide equivariance
         - PLs always provide invariance
         - CLs provide invariance in certain cases?
-    - Receptive field
+    - Receptive field (of a neuron w.r.t. a layer)
+
+**REFERENCES**:
+
+- Receptive field: https://www.baeldung.com/cs/cnn-receptive-field-size
 
 ---
 
-REFERENCES:
-
-- Receptive field: https://www.baeldung.com/cs/cnn-receptive-field-size
+- DL for source separation & enhancement
+    - Applications
+        - Speech enhancement
+        - Karaoke
+        - Music mixing, demixing & remixing
+    - Autoencoders
+        - Spectograms
+        - Reconstruction
+        - Masking
+    - U-Net
+    - Deep clustering
+    - Raw waveform methods
