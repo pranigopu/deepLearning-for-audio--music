@@ -161,7 +161,7 @@ Now, we shall look at convolutional neural networks (CNNs), which are used for t
 
 ## Formulas
 ### Receptive field
-Given that the receptive field of a neuron present in some layer $L$ is $r_n$ for layer $n$, what is the receptive field of the neuron for layer $n-1$? _Note that_ $r_0$ _is the input layer; hence, the lower the layer, the further it is from the final feature layer_. The formula for this is...
+Given that the receptive field of a neuron present in some layer $L$ is $r_n$ for layer $n$, what is the receptive field of the neuron for layer $n-1$? _Note that_ $r_0$ _is the input layer; hence, the lower the layer, the further it is from the final feature layer_. The formula for this is:
 
 $r_{n-1} = s_n r_n + (k_n - s_n)$
 
