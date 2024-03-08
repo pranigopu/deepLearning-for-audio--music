@@ -59,7 +59,7 @@
 - Sample rate = $\frac{1}{\text{Time interval after which a new sample is taken}}$
     - Measured in samples per second or Hertz
 - Frame length = Samples per frame OR Time length of a frame
-- Hop length <br> = Samples per hop OR Time length of a hop <br> = $\frac{1}{\text{Overlap between windows perr hop}}$
+- Hop length <br> = Samples per hop OR Time length of a hop <br> = $\frac{1}{\text{Overlap between windows per hop}}$
     - Determines frame rate <br> _i.e. hop length decides how many frames measured per second; this is independent of frame length_
 - Frame rate <br> = Frames per second <br> = $\frac{\text{Sample rate}}{\text{Hop length}}$
 - Spectral resolution <br> = Bandwidth of a spectogram bin <br> = Range of frequencies considered as one class
