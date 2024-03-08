@@ -158,3 +158,19 @@ Now, we shall look at convolutional neural networks (CNNs), which are used for t
     - U-Net
     - Deep clustering
     - Raw waveform methods
+
+## Formulas
+### Receptive field
+Given that the receptive field of a neuron present in some layer $L$ is $r_n$ for layer $n$, what is the receptive field of the neuron for layer $n-1$? _Note that_ $r_0$ _is the input layer; hence, the lower the layer, the further it is from the final feature layer_. The formula for this is...
+
+$r_{n-1} = s_n r_n + (k_n - s_n)$
+
+Here:
+
+- $r_n$ = Receptive field of the neuron for layer $n$
+- $r_{n-1}$ = Receptive field of the neuron for layer $n-1$
+- $s_n$ = Stride used in layer $n$
+- $k_n$ = Kernel size used in layer $n$ (assuming square kernel)
+    - $k_n$ is the length of one size of the square
+
+Now, we know that $r_L = 1$ (since $L$ is the layer where the neuron is). Hence, we can recursively apply the formula given to obtain the receptive field of the neuron for any layer $n$ (including $n = 0$), given that we know $s_L$ and $k_L$.
