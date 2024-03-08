@@ -61,11 +61,11 @@
 - Frame length = Samples per frame OR Time length of a frame
 - Hop length <br> = Samples per hop OR Time length of a hop <br> = $\frac{1}{\text{Overlap between windows perr hop}}$
     - Determines frame rate <br> _i.e. hop length decides how many frames measured per second; this is independent of frame length_
-- Frame rate <br> = Frames per second <br> = $\frac{\text{Sample rate}}{\text{Hope length}}$
+- Frame rate <br> = Frames per second <br> = $\frac{\text{Sample rate}}{\text{Hop length}}$
 - Spectral resolution <br> = Bandwidth of a spectogram bin <br> = Range of frequencies considered as one class
 - Audio file length = Total frames $\times$ Hop length
 
 Synonyms:
 
-- Hope size = Hop length = Step size = Step length
+- Hop size = Hop length = Step size = Step length
 - Frame size = Frame length = Window size = Window length
