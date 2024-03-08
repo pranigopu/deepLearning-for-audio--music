@@ -54,3 +54,18 @@
     - More FR $\implies$ Fewer frames
 
 **NOTE**: Processing audio for deep learning often requires converting audio to images (especially when using CNNs).
+
+## Formulas
+- Sample rate = $\frac{1}{\text{Time interval after which a new sample is taken}}$
+    - Measured in samples per second or Hertz
+- Frame length = Samples per frame OR Time length of a frame
+- Hop length <br> = Samples per hop OR Time length of a hop <br> = $\frac{1}{\text{Overlap between windows perr hop}}$
+    - Determines frame rate <br> _i.e. hop length decides how many frames measured per second; this is independent of frame length_
+- Frame rate <br> = Frames per second <br> = $\frac{\text{Sample rate}}{\text{Hope length}}$
+- Spectral resolution <br> = Bandwidth of a spectogram bin <br> = Range of frequencies considered as one class
+- Audio file length = Total frames $\times$ Hop length
+
+Synonyms:
+
+- Hope size = Hop length = Step size = Step length
+- Frame size = Frame length = Window size = Window length
