@@ -11,6 +11,10 @@
     - You are going to apply at least two different deep learning methods to it, and discuss their performance - so, the audio file needs to have enough content & complexity to it that you can clearly see what an algorithm gets right/wrong. It is also helpful if the audio is Creative Commons licensed because that means you can republish it (e.g. blog about it), but that's not essential.
     - One source of copyleft music is: https://www.jamendo.com/
 
-Submission format: 1500-word report PDF. Please also submit a copy of the audio file used as the case study, as well as your code which includes a Jupyter notebook with cell outputs. Please put this all into one ZIP file, named as follows: `coursework_{yourname}.zip`. You will be assessed on: the suitability of the deep learning applied, the discussion/reflection of the detailed results from the case study audio, and generally on the quality of the written report.
+Submission format: 1500-word report PDF. Please also submit a copy of the audio file used as the case study, as well as your code which includes a Jupyter notebook with cell outputs. Please put this all into one ZIP file, named as follows:
+
+`coursework_{yourname}.zip`
+
+You will be assessed on: the suitability of the deep learning applied, the discussion/reflection of the detailed results from the case study audio, and generally on the quality of the written report.
 
 _Please feel free to blog publicly about your work in progress, if you like, or to share code publicly (e.g. on Github)._
