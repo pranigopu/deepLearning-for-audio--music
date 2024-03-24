@@ -1,6 +1,6 @@
 # Module coursework for deep learning for audio and music
 
-For seeing the instructions for this coursework, read: [INFO.md]()
+For more information about this coursework, read: [INFO.md]()
 
 ## Resources
 
