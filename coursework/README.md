@@ -28,3 +28,4 @@ _Compare the outcomes of the above 3._
         - https://github.com/GiantSteps/giantsteps-tempo-dataset (TEMPO)
     - https://paperswithcode.com/paper/pop909-a-pop-song-dataset-for-music
         - https://github.com/music-x-lab/POP909-Dataset/tree/master (KEY)
+    - http://millionsongdataset.com/ (KEY & TIME SIGNATURE)
