@@ -19,5 +19,6 @@ _Compare the outcomes of the above 3._
 
 ## Resources
 
-- https://www.looperman.com/
-- https://www.jamendo.com/
+- Royalty-free audio loops: https://www.looperman.com/
+- Royalty-free audio files: https://www.jamendo.com/
+- Datasets (key and tempo): http://www.cp.jku.at/datasets/giantsteps/
