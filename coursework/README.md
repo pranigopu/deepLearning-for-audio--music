@@ -21,4 +21,10 @@ _Compare the outcomes of the above 3._
 
 - Royalty-free audio loops: https://www.looperman.com/
 - Royalty-free audio files: https://www.jamendo.com/
-- Datasets (key and tempo): http://www.cp.jku.at/datasets/giantsteps/
+- Potential datasets:
+- Datasets:
+    - http://www.cp.jku.at/datasets/giantsteps/
+        - https://github.com/GiantSteps/giantsteps-key-dataset (KEY)
+        - https://github.com/GiantSteps/giantsteps-tempo-dataset (TEMPO)
+    - https://paperswithcode.com/paper/pop909-a-pop-song-dataset-for-music
+        - https://github.com/music-x-lab/POP909-Dataset/tree/master (KEY)
