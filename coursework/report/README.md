@@ -1,5 +1,7 @@
 # Musical key & tempo recognition - Coursework Report
 
+- **Subject name**: Deep learning for audio and music
+- **Subject code**: ECS7013P
 - **Student name**: Pranav Narendra Gopalkrishna
 - **Student number**: 231052045
 - **Date**: 11/04/2023
