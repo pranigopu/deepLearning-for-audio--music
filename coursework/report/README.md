@@ -161,7 +161,7 @@ _Check appendix for more details._
 ## Results
 Final validation accuracy achieved after ten epochs was 0.5583 ~ 56% (with validation loss 1.9047). The final validation performance as per the above performance evaluation method was 0.6114238410596027 ~ 61%. Training for more epochs did not improve validation accuracy or performance. Moreover, even in ten epochs, the model overfit greatly, reaching 100% accuracy in training (with training loss 0.0176) while validation was stuck at around 50-60%, as seen in the following:
 
-![](images/CNNTraining.png)
+[![](images/CNNTraining.png)](https://github.com/pranigopu/deepLearning--for--audio-music/blob/319c6f06d2716ac126be0c3da8c8121d838429f9/coursework/report/images/CNNTraining.png)
 
 # TASK 2: Musical tempo evaluation
 Tempo is a quantity in the ratio scale, but it is easier to train for classification problems using more complex architectures such as CNNs and RNNs, i.e. recurrent neural networks (_we shall see soon how tempo classes are defined_).
@@ -232,7 +232,7 @@ Inputs for the B-RNN were equally-sized log-scaled-amplitude melspectrograms wit
 ### Architecture
 The architecture took inspiration from the one referenced in Soares et. al, 2019. It is as follows:
 
-![](images/originalBRNN.png)
+[![](images/originalBRNN.png)](https://github.com/pranigopu/deepLearning--for--audio-music/blob/319c6f06d2716ac126be0c3da8c8121d838429f9/coursework/report/images/originalBRNN.png)
 
 The above was modified by adding:
 
@@ -242,7 +242,7 @@ The above was modified by adding:
 
 The architecture finally used is as follows:
 
-![](images/modifiedBRNN.png)
+[![](images/modifiedBRNN.png)](https://github.com/pranigopu/deepLearning--for--audio-music/blob/319c6f06d2716ac126be0c3da8c8121d838429f9/coursework/report/images/modifiedBRNN.png)
 
 - Total params:  59,570
 - Trainable params: 59,058
@@ -263,7 +263,7 @@ Following the referenced CNN architecture, the model has the following hyper-par
 ## Results
 Final validation accuracy achieved after 60 epochs was 0.6401  ~ 64% (with validation loss 1.2823). The model overfit to some extent, reaching upto a training accuracy of 0.8030 ~ 80% (with training loss 0.6015) while validation was stuck at around 60-65%, as seen in the following:
 
-![](images/BRNNTraining.png)
+[![](images/BRNNTraining.png)](https://github.com/pranigopu/deepLearning--for--audio-music/blob/319c6f06d2716ac126be0c3da8c8121d838429f9/coursework/report/images/BRNNTraining.png)
 
 # Combining the two inferences
 Due to time constraints, only one method of combining the two inferences was explored, namely post-processing of the predictions of the two models (after training each one and saving the trained weights). To achieve this, each model's weights after training were stored, then assigned to models (of matching architectures) within a class `KeyAndTempoClassifier`, which has methods for:
