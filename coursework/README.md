@@ -28,7 +28,3 @@ _Compare the outcomes of the above 3._
     - Musical key datasets: https://paperswithcode.com/paper/pop909-a-pop-song-dataset-for-music
         - Key: https://github.com/music-x-lab/POP909-Dataset/tree/master
     - Musical key & time signature datasets: http://millionsongdataset.com/
-- Used datasets:
-    - Musical key & tempo datasets: http://www.cp.jku.at/datasets/giantsteps/
-        - Key: https://github.com/GiantSteps/giantsteps-key-dataset
-        - tempo: https://github.com/GiantSteps/giantsteps-tempo-dataset
