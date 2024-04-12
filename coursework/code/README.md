@@ -39,6 +39,29 @@ The file names (with self-explanatory names) are:
 ## Regenerating spectrograms & melspectrograms
 If the spectrograms and melspectrograms have not already been stored, you will have to generate them. You will be prompted to do so if you run the appropriate code. Be warned that upon generating the spectrograms and melspectrograms, the files to store their values will be generated, and these files (especially for spectrograms) can be quite large. If you do not want these files to be generated, alter the appropriate code in `Functions.ipynb`.
 
+## Downloading the audio for training and testing
+As mentioned in the report, the data for the 2 tasks was taken from the following:
+
+**TASK 1**:
+
+- Dataset name: GiantSteps Key Set
+- GitHub URL: https://github.com/GiantSteps/giantsteps-key-dataset
+
+**TASK 2**:
+
+- Dataset name: GiantSteps Tempo Set
+- GitHub URL: https://github.com/GiantSteps/giantsteps-tempo-dataset
+
+---
+
+I obtained the data for each task as follows:
+
+- Cloned the respective dataset's GitHub repository on my own system
+- Ran the Bash script `audio_dl.sh` present in the respective repository's directory
+- Upon running the above, I obtained a folder "audio" in which were the relevant MP3 audio files
+
+**NOTE**: When running `audio_dl.sh`, I faced a strange issue wherein though the right audio files were being downloaded, the Bash script did not recognise it for some reason and executed its failure-to-download condition, which involved removing the created MP3 file. To prevent this removal, I simply commented the line `rm "$audiofilename"` in the Bash script. I did not try to learn the cause of this issue, so I cannot say why this issue occurred.
+
 ## Special references & acknowledgements
 
 Help in figuring out how to process audio data and train neural networks (including CNN and RNN):
