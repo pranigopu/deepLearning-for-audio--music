@@ -4,18 +4,8 @@ For more information about this coursework, read: [INFO.md](https://github.com/p
 
 ## Proposed project
 
-The 2 DL inferences:
-
-- Major/minor classifier (using CNN)
-- Time signature classifier (using RNN)
-
-Inference combinations (of the above 2 DL inferences):
-
-- Single CNN model
-- Composite model
-- Sequential CNN model (output of time signature as input to major/minor classifier)
-
-_Compare the outcomes of the above 3._
+- TASK 1: Musical key classifier (using CNN)
+- TASK 2: Tempo classifier (using bidirectional RNN)
 
 ## Resources
 
