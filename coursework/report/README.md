@@ -1,4 +1,4 @@
-<h1 style="font-size:36px;text-align:center">ECS7013P: <i>Deep Learning in Audio & Music</i> <br> Musical key & tempo recognition <br> (Coursework Report)</h1>
+# Musical key & tempo recognition - Coursework Report
 
 - **Student name**: Pranav Narendra Gopalkrishna
 - **Student number**: 231052045
