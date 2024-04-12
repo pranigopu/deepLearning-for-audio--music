@@ -123,7 +123,7 @@ Inputs for the CNN were equally-sized log-scaled-amplitude melspectrograms with 
 ### Architecture
 The architecture referenced (Korzeniowski & Widmer, 2017) is as follows:
 
-![](images/originalCNN.png)
+[![](images/originalCNN.png)](https://github.com/pranigopu/deepLearning--for--audio-music/blob/795478bdacf493d7635df25053ce80d41b3593e2/coursework/report/images/originalCNN.png)
 
 The above was modified by adding:
 
@@ -134,7 +134,7 @@ The above was modified by adding:
 
 The architecture finally used is as follows:
 
-![](images/modifiedCNN.png)
+[![](images/modifiedCNN.png)](https://github.com/pranigopu/deepLearning--for--audio-music/blob/795478bdacf493d7635df25053ce80d41b3593e2/coursework/report/images/modifiedCNN.png)
 
 - Total params: 2,029,624
 - Trainable params: 1,951,864
