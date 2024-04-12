@@ -31,7 +31,7 @@ The above dataset contains:
 The CSV file and audio files were extracted by cloning the GitHub repository. Most of the audio files are about two minutes long, though some may be shorter.
 
 ## Target classes
-However, to enable 1-hot encoding, each musical key has been mapped to an integer. _Note that we ignore enharmonics; for example, A# and Bb are the same key in essence, so we only use Bb._ The key-to-integer mapping is give below:
+However, to enable 1-hot encoding, each musical key has been mapped to an integer. _Note that we ignore enharmonics; for example, A# and Bb are the same key in essence, so we only use Bb._ The key-to-integer mapping is given below:
 
 Class | Integer
 ---|---
