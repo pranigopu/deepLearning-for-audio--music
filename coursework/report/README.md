@@ -333,7 +333,7 @@ My case study audio file is my own composition "Ambient Life". It is over five m
 
 Each prediction can be personally verified using a small player given in the code. A common error noticed was the misidentification of a key with its relative minor or even the relative minor of its fifth. Such errors indicate that the model is heading in the right direction, since the "wrong" keys are quite close the "right" keys. Nevertheless, it is clear the model's training could be improved, chiefly by improving the dataset but also by enabling the model to pick out more relevant features.
 
-**ADDITIONAL NOTE NOTE IN ORIGINAL REPORT**: <br> _The actual key of the piece initially is Ab major (whose relative minor is F minor). But the key shifts throughout the piece_.
+**ADDITIONAL NOTE NOT IN THE ORIGINAL REPORT**: <br> _The actual key of the piece initially is Ab major (whose relative minor is F minor). But the key shifts throughout the piece_.
 
 As for tempo prediction, most segments are marked as 125 (the original tempo marking was 120); this is again quite close to the ground truth, but we see also that the quieter sections of the piece are marked with a slower or even zero tempo. This is to be expected, especially for such short segments, since the model (in slower sections) may have little-to-no context to recognise the tempo. However, where the context does exist, the model is remarkably accurate.
 
