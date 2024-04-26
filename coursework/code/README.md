@@ -16,7 +16,7 @@ For importing `.ipynb` files, I had installed the module `import_ipynb`. You can
 ```
 
 ## Datasets
-- Key dataset: https://github.com/GiantSteps/giantsteps-key-dataset (KEY)
+- Key dataset: https://github.com/GiantSteps/giantsteps-key-dataset
 - Tempo dataset: https://github.com/GiantSteps/giantsteps-tempo-dataset
 
 The CSV file with annotations for the key dataset is already present in this directory as `musicalKeyClassification.csv`. Annotations for tempo recognition is also present in the folder `annotationsForMusicalTempoClassification`.
