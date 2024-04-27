@@ -10,45 +10,45 @@ CHOSEN PAPER LINK: https://arxiv.org/abs/2101.04884
 ---
 
 # Presentation notes
-## SLIDE 2
+## SLIDE 2: Driving goals & questions
 The velocity of the music (notes per second) can be detected auditorily. Lot of performance aspects (ex. arpeggio, playing speed, cadences, hand movements) can be detected visually. The presence of multiple notes at once with cadences that correspond to cadences included in the grade level syllabi above would be recognizable both through auditory and visual analysis.
 
-## SLIDE 7
+## SLIDE 7: Data acquisition
 No overlap between training and test sets.
 
-## SLIDE 8
+## SLIDE 8: Closer look at key scored attributes
 Levels 1-9 represent pre-collegiate certification/skill level, while level 10 represents a collegiate or post-collegiate mastery. The primary evaluation of player skill (by a human evaluator, for annotation) is through the technique required for the most difficult song they are able to play. In this way, song level generally indicates player skill.
 
-## SLIDE 9
+## SLIDE 9: Mitigating small dataset size
 This (i.e. training the data on clips instead of whole videos) would be necessary in any case (even for a larger dataset), since CNNs have difficulty processing long videos
 
-## SLIDE 10
+## SLIDE 10: Sampling schemes
 It is unfeasible to use all the clips of a performance for training, hence we sample some clips from the whole video. (a) Contiguous sampling scheme is wherein each sample gets a set of contiguous segments. (b) Uniformly distributed sampling scheme is wherein each sample gets uniformly-spaced segments from across the performance video.
 
-## SLIDE 14
+## SLIDE 14: Visual branch - Network type used
 _What can be learnt from visual analysis and how?_ The lack of certain skills would not give any indication as to the level of a pianist, but the presence of certain skills would immediately indicate a very high level of technical achievement. For example, professional pianists who must play at high speeds may play eight note intervals with their first and third fingers, which is incredibly difficult for the average pianist. To be able to take these into account, we need to process clips rather than single frames; hence, we need 3DCNN not 2DCNN.
 
-## SLIDE 15
+## SLIDE 15: Visual branch - Feature processing method
 Prior work in AQA has shown averaging to work well and it also enables end-to-end training. RNN based aggregation would not enable end-to-end training when used with 3DCNNs due to large number of parameters and consequent overfitting. Therefore, we choose to use averaging as our aggregation scheme to obtain whole sample-level video features from clip-level features.
 
-## SLIDE 16
+## SLIDE 16: Aural branch - Network type used
 _What can be learnt from auditory analysis?_ A significant amount of information can be detected from audio as well. The velocity of the music (notes per second) can be detected auditorily, which is a simple yet valuable tool to judge the technical skill required for a piece. The presence of multiple notes at once with cadences that correspond to cadences included in the grade level syllabi above would be recognizable both through auditory and visual analysis.
 
-## SLIDE 18
+## SLIDE 18: Multimodal branch
 Cross-modality contamination is the case wherein features processed from one mode of information affect the parameters used to process features from a different mode of information (aural features and their effect on the multimodal features may affect the parameters for processing features from the visual branch and vice versa). Each modality must be processed independently, due to separate properties and processing requirements!
 
-## SLIDE 20
+## SLIDE 20: Objective function (considerations & components)…
 KEY CONSIDERATION! Unlike a typical classification problem, in our player-level prediction problem, the distance between categories has meaning. For example, for a ground-truth player-level of 5, although predicted levels of 2 and 6 are both incorrect, a predicted level of 6 is “less wrong” than predicted level of 2.
 
 **Precedent for using L1 distance**: <br> Paritosh Parmar and Brendan Tran Morris, “What and how well you performed? A multitask learning approach to action quality assessment,” in Proceedings of the IEEE Conference on Computer Vision and Pattern, Recognition, 2019, pp. 304–313.
 
-## SLIDE 23
+## SLIDE 23: Experimentation questions
 CV $\implies$ Computer Vision, ML $\implies$ Machine Learning.
 
-## SLIDE 26
+## SLIDE 26: Implementation details for visual branch
 Overfitting is a more significant danger due to the small dataset. Hence, they use a large dataset that is based on a similar domain (action recognition) as the one the visual branch is dealing with.
 
-## SLIDE 27
+## SLIDE 27: Implementation details for aural branch
 **ImageNet**:
 
 The ImageNet project is a large visual database designed for use in visual object recognition software research. More than 14 million images have been hand-annotated by the project to indicate what objects are pictured and in at least one million of the images, bounding boxes are also provided. ImageNet contains more than 20,000 categories, with a typical category, such as "balloon" or "strawberry", consisting of several hundred images.
@@ -57,10 +57,10 @@ The ImageNet project is a large visual database designed for use in visual objec
 
 A residual neural network (ResNet) is an artificial neural network (ANN) that utilizes skip connections (shortcuts) to jump over some layers to help prevent overfitting. Typical ResNet models are implemented with double or triple layer skips that contain nonlinearities (ReLU) and batch normalization in between.
 
-## SLIDE 30
+## SLIDE 30: Understanding the results
 Trivial local or static cues refer to cues obtained by averaging consequent clips in some small time-interval, such as certain kinds of small movements (ex. flourishing motions), certain phrases, etc.
 
-## SLIDE 33
+## SLIDE 33: Limitations
 Distance is relevant! Better to mark 9 as 7 than 3.
 
 ---
