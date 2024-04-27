@@ -65,7 +65,7 @@ Distance is relevant! Better to mark 9 as 7 than 3.
 
 ---
 
-# Preparation notes on the chosen paper
+# Preparation notes made before the presentation slides
 ## Driving questions
 - Can a computer assess piano player's skill level?
 - Visual analysis or auditory analysis? What about both?
