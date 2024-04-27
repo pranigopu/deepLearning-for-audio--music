@@ -2,7 +2,7 @@
 
 For more information about this coursework, read: [INFO.md](https://github.com/pranigopu/deepLearning--for--audio-music/blob/4e33739eea581d1f131ba4cc03d926456157d027/coursework/INFO.md)
 
-## Proposed project
+## Chosen tasks
 
 - TASK 1: Musical key classifier (using CNN)
 - TASK 2: Tempo classifier (using bidirectional RNN)
