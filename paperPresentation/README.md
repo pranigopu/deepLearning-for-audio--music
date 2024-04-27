@@ -73,24 +73,28 @@ Distance is relevant! Better to mark 9 as 7 than 3.
     -**CONTEXT**: Long videos are difficult for CNNs to process
 
 ## Key considerations for data & training
-- Dataset <br>**NOTE**: _The dataset contains visual and auditory data_
-    - Feature selection w.r.t. method of evaluation
-    - Data collection method
-    - Mitigation of small dataset size (as data collection method led to small dataset)
-    - Sampling schemes (both were used and compared to each other)
-        - Uniform
-        - Contiguous
+### Dataset
+**NOTE**: _The dataset contains both visual and auditory data._
+
+- Feature selection w.r.t. method of evaluation
+- Data collection method
+- Mitigation of small dataset size (as data collection method led to small dataset)
+- Sampling schemes (both were used and compared to each other)
+    - Uniform
+    - Contiguous
      
 **NOTE**: Sampling schemes relate to how clips must be sampled from longer videos to best reflect the player's performance. Relevant quote from the paper: <br> _"Since current CNNs have difficulty processing long [video] videos, how can shorter clips be sampled to best reflect the players skill level?"_
 
-- Training <br>**NOTE**: _Consider the data representation and CNN structure used for each branch_
-    - Branches
-        - Visual branch
-        - Aural branch <br>**CONCEPTS TO LEARN**: _Averaging function_
-        - Multimodal branch <br>**CONCEPTS TO LEARN**: _Cross-modality contamination_
-    - Objective function
-        - Difference from usual classification problems
-        - Defining distance component of the objective function
+### Training
+**NOTE**: _Consider the data representation and CNN structure used for each branch._
+
+- Branches
+    - Visual branch
+    - Aural branch <br>**CONCEPTS TO LEARN**: _Averaging function_
+    - Multimodal branch <br>**CONCEPTS TO LEARN**: _Cross-modality contamination_
+- Objective function
+    - Difference from usual classification problems
+    - Defining distance component of the objective function
      
 ### Dataset details
 Relevant quote: <br> _"In this paper, automated determination of piano playing skill level based on a 10 point scale using a new multimodal PIano Skills Assessment (PISA) dataset (Fig. 1) that accounts for both visual and auditory evidence."_
