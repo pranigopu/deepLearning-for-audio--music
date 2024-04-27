@@ -1,4 +1,4 @@
-![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/24209e61-4ed7-49eb-8dc8-3f930174b4ee)![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/3323a617-d2ea-4aa3-bc3f-62ac2cbf0f00)# Paper presentation
+![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/95c5b3aa-e2a7-469a-9752-dea3a7818e9d)# Paper presentation
 As a part of the deep learning for audio and music course, we students have to present a paper of our choice (either live or in video, with a live Q & A in either case). My chosen paper is "Piano Skills Assessment" by Paritosh Parmar, Jaiden Reddy and Brendan Morris. I chose this paper due to the following reasons:
 
 - My experience in piano assessment (as a student)
@@ -20,9 +20,13 @@ CHOSEN PAPER LINK: https://arxiv.org/abs/2101.04884
 - **SLIDE 16**: <br> _What can be learnt from auditory analysis?_ A significant amount of information can be detected from audio as well. The velocity of the music (notes per second) can be detected auditorily, which is a simple yet valuable tool to judge the technical skill required for a piece. The presence of multiple notes at once with cadences that correspond to cadences included in the grade level syllabi above would be recognizable both through auditory and visual analysis.
 - **SLIDE 18**: <br> Cross-modality contamination is the case wherein features processed from one mode of information affect the parameters used to process features from a different mode of information (aural features and their effect on the multimodal features may affect the parameters for processing features from the visual branch and vice versa). Each modality must be processed independently, due to separate properties and processing requirements!
 - **SLIDE 20**: <br> KEY CONSIDERATION! Unlike a typical classification problem, in our player-level prediction problem, the distance between categories has meaning. For example, for a ground-truth player-level of 5, although predicted levels of 2 and 6 are both incorrect, a predicted level of 6 is “less wrong” than predicted level of 2. <br><br> _Precedent for using L1 distance..._ <br> Paritosh Parmar and Brendan Tran Morris, “What and how well you performed? A multitask learning approach to action quality assessment,” in Proceedings of the IEEE Conference on Computer Vision and Pattern, Recognition, 2019, pp. 304–313.
-- ![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/41b70e81-0b1a-4a72-9f32-8255d40f61c2)
+- **SLIDE 23**: <br> CV $\implies$ Computer Vision, ML $\implies$ Machine Learning
+- **SLIDE 26**: <br> Overfitting is a more significant danger due to the small dataset. Hence, they use a large dataset that is based on a similar domain (action recognition) as the one the visual branch is dealing with.
+- **SLIDE 27**: <br> **ImageNet**: <br> The ImageNet project is a large visual database designed for use in visual object recognition software research. More than 14 million images have been hand-annotated by the project to indicate what objects are pictured and in at least one million of the images, bounding boxes are also provided. ImageNet contains more than 20,000 categories, with a typical category, such as "balloon" or "strawberry", consisting of several hundred images. <br><br> **ResNet**: A residual neural network (ResNet) is an artificial neural network (ANN) that utilizes skip connections (shortcuts) to jump over some layers to help prevent overfitting. Typical ResNet models are implemented with double or triple layer skips that contain nonlinearities (ReLU) and batch normalization in between.
+- **SLIDE 30**: <br> Trivial local or static cues refer to cues obtained by averaging consequent clips in some small time-interval, such as certain kinds of small movements (ex. flourishing motions), certain phrases, etc.
+- **SLIDE 33**: <br> Distance is relevant! Better to mark 9 as 7 than 3.
 
-
+---
 
 # Preparation notes on the chosen paper
 ## Driving questions
