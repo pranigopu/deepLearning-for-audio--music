@@ -1,4 +1,4 @@
-# Paper presentation
+![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/24209e61-4ed7-49eb-8dc8-3f930174b4ee)![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/3323a617-d2ea-4aa3-bc3f-62ac2cbf0f00)# Paper presentation
 As a part of the deep learning for audio and music course, we students have to present a paper of our choice (either live or in video, with a live Q & A in either case). My chosen paper is "Piano Skills Assessment" by Paritosh Parmar, Jaiden Reddy and Brendan Morris. I chose this paper due to the following reasons:
 
 - My experience in piano assessment (as a student)
@@ -7,11 +7,24 @@ As a part of the deep learning for audio and music course, we students have to p
 
 CHOSEN PAPER LINK: https://arxiv.org/abs/2101.04884
 
-PRESENTATION SLIDES: https://docs.google.com/presentation/d/1MwOBhCRWOwuQSIS4EzNI2pcHKx47INieJDVfoiTOCDI/edit?usp=sharing
-
 ---
 
-# Notes on the chosen paper
+# Presentation notes
+- **SLIDE 2**: <br> The velocity of the music (notes per second) can be detected auditorily. Lot of performance aspects (ex. arpeggio, playing speed, cadences, hand movements) can be detected visually. The presence of multiple notes at once with cadences that correspond to cadences included in the grade level syllabi above would be recognizable both through auditory and visual analysis.
+- **SLIDE 7**: <br> No overlap between training and test sets.
+- **SLIDE 8**: <br> Levels 1-9 represent pre-collegiate certification/skill level, while level 10 represents a collegiate or post-collegiate mastery. The primary evaluation of player skill (by a human evaluator, for annotation) is through the technique required for the most difficult song they are able to play. In this way, song level generally indicates player skill.
+- **SLIDE 9**: <br> This (i.e. training the data on clips instead of whole videos) would be necessary in any case (even for a larger dataset), since CNNs have difficulty processing long videos
+- **SLIDE 10**: <br> It is unfeasible to use all the clips of a performance for training, hence we sample some clips from the whole video. (a) Contiguous sampling scheme is wherein each sample gets a set of contiguous segments. (b) Uniformly distributed sampling scheme is wherein each sample gets uniformly-spaced segments from across the performance video.
+- **SLIDE 14**: <br> _What can be learnt from visual analysis and how?_ The lack of certain skills would not give any indication as to the level of a pianist, but the presence of certain skills would immediately indicate a very high level of technical achievement. For example, professional pianists who must play at high speeds may play eight note intervals with their first and third fingers, which is incredibly difficult for the average pianist. To be able to take these into account, we need to process clips rather than single frames; hence, we need 3DCNN not 2DCNN.
+- **SLIDE 15**: <br> Prior work in AQA has shown averaging to work well and it also enables end-to-end training. RNN based aggregation would not enable end-to-end training when used with 3DCNNs due to large number of parameters and consequent overfitting. Therefore, we choose to use averaging as our aggregation scheme to obtain whole sample-level video features from clip-level features.
+- **SLIDE 16**: <br> _What can be learnt from auditory analysis?_ A significant amount of information can be detected from audio as well. The velocity of the music (notes per second) can be detected auditorily, which is a simple yet valuable tool to judge the technical skill required for a piece. The presence of multiple notes at once with cadences that correspond to cadences included in the grade level syllabi above would be recognizable both through auditory and visual analysis.
+- **SLIDE 18**: <br> Cross-modality contamination is the case wherein features processed from one mode of information affect the parameters used to process features from a different mode of information (aural features and their effect on the multimodal features may affect the parameters for processing features from the visual branch and vice versa). Each modality must be processed independently, due to separate properties and processing requirements!
+- **SLIDE 20**: <br> KEY CONSIDERATION! Unlike a typical classification problem, in our player-level prediction problem, the distance between categories has meaning. For example, for a ground-truth player-level of 5, although predicted levels of 2 and 6 are both incorrect, a predicted level of 6 is “less wrong” than predicted level of 2. <br><br> _Precedent for using L1 distance..._ <br> Paritosh Parmar and Brendan Tran Morris, “What and how well you performed? A multitask learning approach to action quality assessment,” in Proceedings of the IEEE Conference on Computer Vision and Pattern, Recognition, 2019, pp. 304–313.
+- ![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/41b70e81-0b1a-4a72-9f32-8255d40f61c2)
+
+
+
+# Preparation notes on the chosen paper
 ## Driving questions
 - Can a computer assess piano player's skill level?
 - Visual analysis or auditory analysis? What about both?
@@ -70,11 +83,6 @@ Relevant quote: <br> _"In this paper, automated determination of piano playing s
 > REFERENCE: (To understand what a sample scheme is) https://itl.nist.gov/div898/handbook/ppc/section3/ppc332.htm
 
 **NOTE**: _The 2 different use-cases based on the 2 different sampling schemes are both explored and compared to each other in experimentation._
-
-### Training details
-
-
-#### Unimodal approach
 
 ## Key considerations for experimentation
 **Questions for experiments**:
