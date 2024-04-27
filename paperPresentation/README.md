@@ -1,4 +1,4 @@
-![image](https://github.com/pranigopu/deepLearning-for-audio--music/assets/69959590/95c5b3aa-e2a7-469a-9752-dea3a7818e9d)# Paper presentation
+# Paper presentation
 As a part of the deep learning for audio and music course, we students have to present a paper of our choice (either live or in video, with a live Q & A in either case). My chosen paper is "Piano Skills Assessment" by Paritosh Parmar, Jaiden Reddy and Brendan Morris. I chose this paper due to the following reasons:
 
 - My experience in piano assessment (as a student)
