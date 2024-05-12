@@ -171,6 +171,6 @@ Here:
 - $r_{n-1}$ = Receptive field of the neuron for layer $n-1$
 - $s_n$ = Stride used in layer $n$
 - $k_n$ = Kernel size used in layer $n$ (assuming square kernel)
-    - $k_n$ is the length of one size of the square
+    - $k_n$ is the length of one side of the square
 
 Now, we know that $r_L = 1$ (since $L$ is the layer where the neuron is). Hence, we can recursively apply the formula given to obtain the receptive field of the neuron for any layer $n$ (including $n = 0$), given that we know $s_L$ and $k_L$.
