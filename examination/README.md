@@ -79,13 +79,13 @@ Let us define some notation:
 
 We define categorical cross-entropy loss as:
 
-$CCE = \sum_{i=0}^{k} t_i \log(f(s)_i)$
+$\displaystyle CCE = \sum_{i=0}^{k} t_i \log(f(s)_i)$
 
 ### Part c
 
 Scalar output for the whole batch would involve averaging the categorical cross-entropy loss for each output within the mini-batch. Hence, if the mini-batch size is $b$, we have the following formula (using the same notation as part b):
 
-$CCE_\text{mini-batch} = \frac{1}{b} \sum_{h=0}^{b} \sum_{i=0}^{k} t_i \log(f(s_h)_i)$
+$\displaystyle CCE_\text{mini-batch} = \frac{1}{b} \sum_{h=0}^{b} \sum_{i=0}^{k} t_i \log(f(s_h)_i)$
 
 Here:
 
