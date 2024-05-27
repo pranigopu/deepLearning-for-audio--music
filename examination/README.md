@@ -27,7 +27,7 @@ The batch size for figure B should be smaller than for figure A, leading to more
 
 ### Part c
 
-> REFERENCES USED: https://www.cs.toronto.edu/~wenjie/papers/nips16/top.pdf
+> REFERENCE USED: https://www.cs.toronto.edu/~wenjie/papers/nips16/top.pdf
 
 #### (i)
 
