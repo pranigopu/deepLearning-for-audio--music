@@ -5,6 +5,8 @@
 
 For more information about this coursework, read: [INFO.md](https://github.com/pranigopu/deepLearning--for--audio-music/blob/4e33739eea581d1f131ba4cc03d926456157d027/coursework/INFO.md)
 
+The coursework's main repository: https://github.com/pranigopu/key--tempo-deepLearning
+
 ## Chosen tasks
 
 - TASK 1: Musical key classifier (using CNN)
