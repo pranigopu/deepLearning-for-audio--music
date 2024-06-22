@@ -7,6 +7,8 @@ For more information about this coursework, read: [INFO.md](https://github.com/p
 
 The coursework's main repository: https://github.com/pranigopu/key--tempo-deepLearning
 
+---
+
 ## Chosen tasks
 
 - TASK 1: Musical key classifier (using CNN)
