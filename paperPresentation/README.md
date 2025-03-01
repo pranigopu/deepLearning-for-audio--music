@@ -119,11 +119,11 @@ Relevant quote: <br> _"In this paper, automated determination of piano playing s
 
 **ANSWER 3**: <br>  _"To mitigate small dataset size, we create multiple unique, non-overlapping samples, each of size of 16 frames. In this way, we have a total of 992 unique samples."_ Hence, they divide the videos into small, equally-sized clips; the model is to be trained not on whole videos but on clips. This would be necessary in any case (even for a larger dataset), since CNNs have difficulty processing long videos (however, for larger datasets, we may only take a few clips per video, rather than use the whole video).
 
-<br>
+---
 
-**QUESTION 3.i**: How are the samples taken?
+**QUESTION 4**: How are the samples taken (relates to question 3)?
 
-**ANSWER 3.i**: <br>  Samples are taken in 2 different ways (leading to 2 different use-cases): (a) contiguous sampling scheme and (b) uniformly distributed sampling scheme. A sampling scheme is a detailed description of what data will be obtained and how this will be done. Each performance - measured in frames - is divided into small, equally-sized segments (equally-sized means having the same number of frames). A sample is the set of segments considered as a whole (i.e. as a single input for the CNN). Sampling scheme, thus, defines the method by which the segments are picked for each sample. (a) Contiguous sampling scheme is wherein each sample gets a set of contiguous segments. (b) Uniformly distributed sampling scheme is wherein each sample gets uniformly-spaced segments from across the performance video.
+**ANSWER 4**: <br>  Samples are taken in 2 different ways (leading to 2 different use-cases): (a) contiguous sampling scheme and (b) uniformly distributed sampling scheme. A sampling scheme is a detailed description of what data will be obtained and how this will be done. Each performance - measured in frames - is divided into small, equally-sized segments (equally-sized means having the same number of frames). A sample is the set of segments considered as a whole (i.e. as a single input for the CNN). Sampling scheme, thus, defines the method by which the segments are picked for each sample. (a) Contiguous sampling scheme is wherein each sample gets a set of contiguous segments. (b) Uniformly distributed sampling scheme is wherein each sample gets uniformly-spaced segments from across the performance video.
 
 > REFERENCE: (To understand what a sample scheme is) https://itl.nist.gov/div898/handbook/ppc/section3/ppc332.htm
 
