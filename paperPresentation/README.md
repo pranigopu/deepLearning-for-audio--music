@@ -10,6 +10,8 @@ CHOSEN PAPER LINK: https://arxiv.org/abs/2101.04884
 ---
 
 # Presentation notes
+> **Reference**: [Presentation Slides](./'Presentation Slides.pdf')
+
 ## SLIDE 2: Driving goals & questions
 The velocity of the music (notes per second) can be detected auditorily. Lot of performance aspects (ex. arpeggio, playing speed, cadences, hand movements) can be detected visually. The presence of multiple notes at once with cadences that correspond to cadences included in the grade level syllabi above would be recognizable both through auditory and visual analysis.
 
